@@ -1,0 +1,58 @@
+{
+    "name": "storybook-addon-styled-components-themes",
+    "title": "storybook-addon-styled-components-themes",
+    "version": "0.0.1",
+    "description": "Storybook addon for styled components with theme provider",
+    "keywords": [
+        "react",
+        "react-component",
+        "storybook",
+        "addon",
+        "theme",
+        "themes",
+        "addons",
+        "styled-components",
+        "typescript",
+        "javascript"
+    ],
+    "license": "MIT",
+    "author": "Elsa Santos <elsasantos@outlook.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/elsa-santos/storybook-addon-styled-components-themes"
+    },
+    "main": "index.js",
+    "scripts": {
+        "copy-files": "cp package.json lib/package.json && cp README.md lib/README.md",
+        "build": "rm -rf lib/ && tsc && npm run copy-files",
+        "build-publish": "npm run build && cd lib && npm publish",
+        "update-version": "node update-version.js"
+    },
+    "dependencies": {
+        "@storybook/api": "^5.3.18",
+        "@storybook/components": "^5.3.18",
+        "@storybook/theming": "^5.3.18",
+        "react": "^16.13.0",
+        "typescript": "~3.7.2"
+    },
+    "devDependencies": {
+        "@storybook/addons": "^5.3.18",
+        "@storybook/react": "^5.3.18",
+        "@types/node": "^12.0.0",
+        "@types/react": "^16.9.0",
+        "react-dom": "^16.13.1",
+        "styled-components": "^5.0.1"
+    },
+    "peerDependencies": {
+        "@storybook/addons": "^5.3.18",
+        "@storybook/react": "^5.3.18",
+        "styled-components": "^5.0.1"
+    },
+    "bugs": {
+        "url": "https://github.com/elsa-santos/storybook-addon-styled-components-themes/issues"
+    },
+    "homepage": "https://github.com/elsa-santos/storybook-addon-styled-components-themes#readme",
+    "directories": {
+        "lib": "lib"
+    }
+}
