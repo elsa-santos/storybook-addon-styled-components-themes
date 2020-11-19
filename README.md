@@ -10,7 +10,7 @@ Storybook addon for styled components with theme provider
 ### Installing
 
 ```
-yarn add storybook-addon-styled-component-theme --D
+yarn add storybook-addon-styled-component-themes --D
 ```
 
 ## Configuration
