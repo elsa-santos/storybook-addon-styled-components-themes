@@ -1,7 +1,7 @@
 {
     "name": "storybook-addon-styled-components-themes",
     "title": "storybook-addon-styled-components-themes",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Storybook addon for styled components with theme provider",
     "keywords": [
         "react",
