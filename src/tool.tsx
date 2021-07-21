@@ -26,9 +26,18 @@ const Tool = withTheme(({ theme: themeStorybook }) => {
     indexStarted || 0
   );
 
-  React.useEffect(() => {
+  const handleRequestThemes = () => {
     channel.emit(CHANNEL.LOAD_THEMES, themes);
     channel.emit(CHANNEL.CHANGE_THEME, indexThemeSelected);
+  };
+
+  React.useEffect(() => {
+    channel.on(CHANNEL.REQUEST_THEMES, handleRequestThemes);
+    channel.emit(CHANNEL.LOAD_THEMES, themes);
+    channel.emit(CHANNEL.CHANGE_THEME, indexThemeSelected);
+    return () => {
+      channel.removeListener(CHANNEL.REQUEST_THEMES, handleRequestThemes);
+    };
   }, [themeStorybook, themes, indexThemeSelected]);
 
   const menu = (): JSX.Element => (

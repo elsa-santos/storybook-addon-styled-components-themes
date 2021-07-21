@@ -18,7 +18,7 @@ export const WithThemeProvider = ({
   React.useEffect(() => {
     channel.on(CHANNEL.LOAD_THEMES, handleLoadThemes);
     channel.on(CHANNEL.CHANGE_THEME, handleChangeTheme);
-
+    channel.emit(CHANNEL.REQUEST_THEMES);
     return () => {
       channel.removeListener(CHANNEL.LOAD_THEMES, handleLoadThemes);
       channel.removeListener(CHANNEL.CHANGE_THEME, handleChangeTheme);

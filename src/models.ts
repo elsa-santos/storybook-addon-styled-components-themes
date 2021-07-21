@@ -16,4 +16,5 @@ export interface ThemeParameters {
 export enum CHANNEL {
   LOAD_THEMES = 'load-themes',
   CHANGE_THEME = 'change-theme',
+  REQUEST_THEMES = 'request-themes',
 }
