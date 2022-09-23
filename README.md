@@ -4,7 +4,6 @@ Storybook addon for styled components with theme provider
 
 ![](https://media.giphy.com/media/hT0xI1YDfzQrvyttsD/giphy.gif)
 
-
 ## Getting Started
 
 ### Installing
@@ -23,6 +22,13 @@ module.exports = {
   addons: ['storybook-addon-styled-components-themes/register']
 };
 
+```
+
+### Import libraries in .storybook/preview.js
+
+```
+import { WithThemeProvider } from 'storybook-addon-styled-components-themes';
+import { addDecorator } from '@storybook/react';
 ```
 
 ### Add parameters to stories in .storybook/preview.js
