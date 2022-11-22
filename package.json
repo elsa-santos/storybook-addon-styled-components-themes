@@ -37,7 +37,7 @@
     },
     "devDependencies": {
         "@storybook/addons": "^5.3.18",
-        "@storybook/react": "^5.3.18",
+        "@storybook/react": "^6.5.13",
         "@types/node": "^12.0.0",
         "@types/react": "^16.9.0",
         "react-dom": "^16.13.1",
@@ -45,7 +45,7 @@
     },
     "peerDependencies": {
         "@storybook/addons": "^5.3.18",
-        "@storybook/react": "^5.3.18",
+        "@storybook/react": "^6.5.13",
         "styled-components": "^5.0.1"
     },
     "bugs": {
